@@ -13,3 +13,5 @@ export CROSS_COMPILE=$toolchain
 rm -rf pack out $ramdisk/lib/modules/*
 make $defconfig_name
 make mrproper
+find . -name "*.c" -exec chmod 0644 {} \;
+find . -name "*.h" -exec chmod 0644 {} \;
