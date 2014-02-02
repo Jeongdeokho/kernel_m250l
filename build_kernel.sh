@@ -27,4 +27,5 @@ zip -r ../out/M250L_JB.$(date -u +%m)-$(date -u +%d).zip ./
 cd $kernel
 make mrproper
 mv git .git
+rm -rf $ramdisk/lib/modules/*
 touch $ramdisk/lib/modules/empty
